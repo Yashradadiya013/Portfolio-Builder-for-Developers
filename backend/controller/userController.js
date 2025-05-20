@@ -9,7 +9,9 @@ const sighupValidation = joi.object({
 });
 const signUp = async (req, res) => {
   try {
-  } catch (error) {}
+  } catch (error) {
+    return res.status(500).json({ message: "internal server error", error });
+  }
 };
 
 module.exports = {
