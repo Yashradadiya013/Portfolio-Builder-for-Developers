@@ -7,7 +7,10 @@ const sighupValidation = joi.object({
   password: joi.string().min(6).required(),
   portfolios: joi.array().items(joi.string().hex().length(24)),
 });
-const signUp = async (req, res) => {};
+const signUp = async (req, res) => {
+  try {
+  } catch (error) {}
+};
 
 module.exports = {
   signUp,
